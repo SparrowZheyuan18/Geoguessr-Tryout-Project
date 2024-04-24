@@ -1,3 +1,4 @@
+import json
 from youtube_transcript import parse_video_id, get_script_from_youtube, merge_transcript
 from location import get_locations, parse_challenge_id
 from images import get_images
@@ -5,6 +6,13 @@ from images import get_images
 
 youtube_url = "https://www.youtube.com/watch?v=t98r-YV6LnQ"
 challenge_url = "https://www.geoguessr.com/challenge/j5QTVixXslrbDXHj"
+
+data_path = "urls.json"
+
+def load_data():
+    with open(data_path, 'r') as f:
+        data = json.load(f)
+    return data
 
 
 def main():
