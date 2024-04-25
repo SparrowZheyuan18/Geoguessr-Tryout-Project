@@ -15,7 +15,7 @@ The project can be divided into several subtasks:
 
 The data are in the data file. 
 
-* **urls.json **is the Youtube and Geoguessr urls of the [Play Along] playlist.
+* **urls.json**is the Youtube and Geoguessr urls of the [Play Along] playlist.
 * **full_data.jsonl** is the raw retrieved data of images (path), transcripts, and locations.
 * **processed_data.jsonl** is the processed data based on full_data.jsonl. The raw transcripts is paraphrased into **clues** in each games, and tagged with "true" or "false", depends on whether the player gets it right (therefore, the clues are divided into **positive and negative examples**). Images that can't be retrieved due to google map updates are dropped.
 
