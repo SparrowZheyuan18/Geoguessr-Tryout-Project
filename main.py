@@ -4,16 +4,21 @@ from tqdm import tqdm
 from utils.youtube_transcript import parse_video_id, get_script_from_youtube, merge_transcript, split_transcript
 from utils.location import get_locations, parse_challenge_id
 from utils.images import get_images, combine_images
+from configuration import Config
 
 
-data_path = "urls.json"
-image_path = "images"
-full_data_path = "full_data2.json"
+data_path = "data/urls.json"
+image_path = "data/images"
+full_data_path = "data/full_data.jsonl"
+processed_data_path = "data/processed_data2.jsonl"
 
 
-def load_data():
-    with open(data_path, 'r') as f:
-        data = json.load(f)
+def load_data(path):
+    with open(path, 'r') as f:
+        if path.endswith(".jsonl"):
+            data = [json.loads(line) for line in f]
+        else:
+            data = json.load(f)
     return data
 
 
@@ -25,10 +30,9 @@ def dump_jsonl(objects, file_name):
 
 
 def get_data_of_videos():
-    data = load_data()
+    data = load_data(data_path)
     
-    full_data = []
-    for videos in tqdm(data[14:]):
+    for videos in tqdm(data):
         youtube_url = videos["youtube_url"]
         challenge_url = videos["challenge_url"]
         data_item = {
@@ -65,13 +69,37 @@ def get_data_of_videos():
         #     json.dump(full_data, f, indent=4, ensure_ascii=False)
 
 
+def get_processed_data():
+    data = load_data(full_data_path)
+    for item in tqdm(data[13:]):
+        transcript = item["transcript"]
+        locations = item["locations"]
+        images_path = item["images_path"]
+        # print("calling gpt to split transcript")
+        # transcript_list = split_transcript(transcript, paraphrase=False)
+        print("calling gpt to paraphrased transcript")
+        paraphrased_transcript_list = split_transcript(transcript, paraphrase=True)
+        # there are data that misses images
+        if "image_not_available" in item:
+            not_available_list = item["image_not_available"]
+        else:
+            not_available_list = []
+        for i in range(5):
+            if i+1 in not_available_list:
+                continue
+            yield {
+                "youtube_url": item["youtube_url"],
+                "challenge_url": item["challenge_url"],
+                # "transcript": transcript_list[i],
+                "paraphrased_transcript": paraphrased_transcript_list[i]["transcript"],
+                "is_correct": paraphrased_transcript_list[i]["is_correct"],
+                "location": locations[i],
+                "image_path": f"{images_path}/{i+1}/combined.jpg"
+            }
+
+        
+
 if __name__ == "__main__":
-    dump_jsonl(get_data_of_videos(), full_data_path)
-
-
-
-
-
-
-
+    # dump_jsonl(get_data_of_videos(), full_data_path)
+    dump_jsonl(get_processed_data(), processed_data_path)
 
