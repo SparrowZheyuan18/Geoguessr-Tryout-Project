@@ -1,11 +1,11 @@
 import re
-import sys
 from youtube_transcript_api import YouTubeTranscriptApi 
 from configuration import LLM
+from retry import retry
   
 
-divide_prompt = "Here is a youtube transcript of a player playing geoguessr, in which he is trying to guess the location based on the current views. There are totally five rounds. The youtuber starts with prologue, 5 rounds of games, and epilogue. Please split the scripts of 5 rounds of games, and return me only a python list of the 5 round transcripts with punctuation, and exclude the other parts. Also, the youtuber sometimes get the answer correct, or get it wrong. You should determine it based on his word. Your should only return a json, like [{'transcript': '...', 'is_correct': True}, {...}]. The transcript is as follows:\n"
-paraphrase_prompt = "Here is a youtube transcript of a player playing geoguessr, in which he is trying to guess the location based on the current views. There are totally five rounds. The youtuber starts with prologue, 5 rounds of games, and epilogue. Please split the scripts of 5 rounds of games, find useful clues in which he plays the game, and return me only a python list of the paraphrased clues in each round in the transcripts with punctuation, and exclude the other parts. The clues should be neutral and not showing the correctness of the final results. Also, the youtuber sometimes get the answer correct, or get it wrong. You should determine it based on his word. Your should only return a json without '\n', like [{'transcript': clue in the first round, 'is_correct': True}, {...}]. The transcript is as follows:\n"
+divide_prompt = "Here is a youtube transcript of a player playing geoguessr, in which he is trying to guess the location based on the current views. There are totally five rounds. The youtuber starts with prologue, 5 rounds of games, and epilogue. Please split the scripts of 5 rounds of games, and return me only a python list of the 5 round transcripts with punctuation, and exclude the other parts. Also, the player sometimes get the answer correct, or get it wrong. You should determine it based on his word. Your should only return a json, like [{'transcript': '...', 'is_correct': True}, {...}]. The transcript is as follows:\n"
+paraphrase_prompt = "Here is a youtube transcript of a player playing geoguessr, in which he is trying to guess the location based on the current views. There are totally five rounds. The youtuber starts with prologue, 5 rounds of games, and epilogue. Please split the scripts of 5 rounds of games, find useful clues in each round, and return me only a python list of the paraphrased clues (like xxx brands of cars, court style buildings, etc. Instead of using the player's point of view, state the clues in the scene in a neutral tone) in each round in the transcripts with punctuation, and exclude the other parts. The clues should not showing the correctness of the final results. Also, the player sometimes get the answer correct, or get it wrong. You should determine it based on his word. Your should only return a json without '\n', like [{'transcript': clues in the first round, 'is_correct': True}, {...}]. The transcript is as follows:\n"
 
 def parse_video_id(url):
     # There are 6 patterns of YouTube video URL.
@@ -23,9 +23,9 @@ def parse_video_id(url):
             return match.group(1)  
     return "Invalid URL!"
 
-
-def get_script_from_youtube(url):
-    video_id = url
+@retry(tries=5, delay=2)
+def get_script_from_youtube(id):
+    video_id = id
     transcript = YouTubeTranscriptApi.get_transcript(video_id)
     return transcript
 
@@ -50,7 +50,7 @@ def split_transcript(transcript, paraphrase=False):
     else:
         prompt = divide_prompt
 
-    model = "gpt-4-1106"
+    model = "gpt-4-0613"
     response = LLM.chat.completions.create(
         model=model,
         messages=[

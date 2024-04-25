@@ -1,5 +1,5 @@
 import asyncio
-from geoguessr import Geoguessr
+from utils.geoguessr import Geoguessr
 from configuration import Config
 
 
@@ -14,8 +14,10 @@ async def get_locations(challenge_id):
     await geoguessr.play_challenge(challenge_id)
     # challenge_info = await geoguessr.get_challenge_game_info(challenge_id)
     locations = await geoguessr.get_challenge_locations(challenge_id)
-    print(locations)
+    # print("locations:", locations)
     await geoguessr.session.close()
+    return locations
+
 
 
 if __name__ == "__main__":

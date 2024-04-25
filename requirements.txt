@@ -3,3 +3,5 @@ youtube_transcript_api
 openai
 bs4
 pytube
+Pillow
+retry
