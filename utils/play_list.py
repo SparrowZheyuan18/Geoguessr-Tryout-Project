@@ -1,10 +1,10 @@
 import requests
 import json
 import re
+import time
 from pytube import Playlist
 from bs4 import BeautifulSoup
 from requests.exceptions import SSLError
-import time
 
 
 play_list = 'https://www.youtube.com/playlist?list=PL_japiE6QKWq-MCBz_wNr92yw0-HWeY2v'

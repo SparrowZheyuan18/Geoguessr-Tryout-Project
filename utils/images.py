@@ -15,16 +15,12 @@ def get_images(location, id, path, round):
             'key': Config.GCP_API_KEY
         }]
 
-        # Create a results object
         @retry(tries=5, delay=2)
         def streetview_api():
             return google_streetview.api.results(params)
         results = streetview_api()
         # print(results.links)
-
-        # Download images to directory 'downloads'
         results.download_links(f'{path}/{id}/{round}/{heading}')
-
 
 
 def combine_images(path, challenge_id, round):
