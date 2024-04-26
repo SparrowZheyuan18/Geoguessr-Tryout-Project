@@ -6,10 +6,10 @@ This repository stores codes for the tryout project Geoguessr, which takes a lis
 
 The project can be divided into several subtasks:
 
-- Youtube Playlist [Play Along] **-->** Youtube Video and Geoguessr Game URLs (utils.play_list)
-- Video URLs **-->** Video Transcrips (utils.youtube_transcript)
-- Geoguessr URLs **-->** Locations (utils.location)
-- Locations **-->** Images (utils.images)
+- Youtube Playlist [Play Along] --> Youtube Video and Geoguessr Game URLs (utils.play_list)
+- Video URLs --> Video Transcrips (utils.youtube_transcript)
+- Geoguessr URLs --> Locations (utils.location)
+- Locations --> Images (utils.images)
 
 ## Data
 
@@ -17,7 +17,7 @@ The data are in the data file.
 
 - **urls.json** is the Youtube and Geoguessr urls of the [Play Along] playlist.
 - **full_data.jsonl** is the raw retrieved data of images (path), transcripts, and locations.
-- **processed_data.jsonl** is the processed data based on full_data.jsonl. The raw transcripts is paraphrased into **clues** in each games, and tagged with "true" or "false", depends on whether the player gets it right (therefore, the clues are divided into **positive and negative examples**). Images that can't be retrieved due to google map updating are dropped ().
+- **processed_data.jsonl** is the processed data based on full_data.jsonl. The raw transcripts is paraphrased into **clues** in each games, and tagged with "true" or "false", depends on whether the player gets it right (therefore, the clues are divided into **positive and negative examples**). Images that can't be retrieved due to google map updating are dropped.
 
 After processing, the details of data is demonstrated as follows:
 
@@ -92,6 +92,21 @@ After processing, the data item in processed_data.jsonl are like follows:
 
 
 ## Experiments
+
+I did simple preliminary experiments on our dataset. I prompted GPT-4-vision to do the location mapping tasks, evaluating its result w/ or w/o the clues (only the correct clues are included). The prompt is as follows:
+
+```json
+"depends on the details in this image, please determine where it is. You don't have to be exactly correct, just make a guess. Return me only a location, with format like [lat, lng]."
+```
+
+Since we are measuring the distance between the correct answer location and model response location, I choosed the Haversine Distance to evaluate the answer and report the average Haversine Distance of the model:
+
+| w/ or w/o clues | Avg. Dist |
+|-----------------|-----------|
+| zero-shot       | 1070.95km |
+| **with clues**      |  **369.79km** |
+
+With clues as CoT, the model's performance has significantly improved! Which indicates the effectiveness of our dataset.
 
 
 ## Automatic Playing Geoguessr Demo
