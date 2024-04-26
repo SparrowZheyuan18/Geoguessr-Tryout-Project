@@ -106,7 +106,9 @@ Since we are measuring the distance between the correct answer location and mode
 | zero-shot       | 1070.95km |
 | **with clues**      |  **369.79km** |
 
-With clues as CoT, the model's performance has significantly improved! Which indicates the effectiveness of our dataset.
+With clues as CoT, the model's performance **has significantly improved!** Which indicates the effectiveness of our dataset.
+
+Scripts and data for this experiment are in the experiment folder.
 
 
 ## Automatic Playing Geoguessr Demo
