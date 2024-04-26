@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 Set ncfa_cookie, Google Cloud Platform API-KEY, and OPENAI API-KEY in configration.py
 
-```json
+```
 NCFA = "xxxxxxx" // The ncfa cookie is for data from Geoguessr.com. To get one, login to geoguessr, open dev tools, go to Application/Storage/Cookies and copy the value of _ncfa.
 
 GCP_API_KEY = "xxxxxx-xxxxxx" //The GCP API-KEY is for images from google streetview.
