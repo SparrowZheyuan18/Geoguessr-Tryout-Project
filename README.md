@@ -6,10 +6,10 @@ This repository stores codes for the tryout project Geoguessr, which takes a lis
 
 The project can be divided into several subtasks:
 
-- Youtube Playlist [Play Along] --> Youtube Video and Geoguessr Game URLs (utils.play_list)
-- Video URLs --> Video Transcrips (utils.youtube_transcript)
-- Geoguessr URLs --> Locations (utils.location)
-- Locations --> Images (utils.images)
+- Youtube Playlist [Play Along] **-->** Youtube Video and Geoguessr Game URLs (utils.play_list)
+- Video URLs **-->** Video Transcrips (utils.youtube_transcript)
+- Geoguessr URLs **-->** Locations (utils.location)
+- Locations **-->** Images (utils.images)
 
 ## Data
 
@@ -99,7 +99,7 @@ After processing, the data item in processed_data.jsonl are like follows:
 Before I found how to request Geoguessr game information, I developed a script to automatically play Geoguessr game, by manipulating the website. This script can be use to drive Language Models to play this game directly. To try this out, simply run the following codes:
 
 ```python
-python simulate_geoguessr.py
+python -m utils.simulate_geoguessr
 ```
 
 Note that this script can be really slow. 
