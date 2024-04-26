@@ -25,7 +25,7 @@ After processing, the details of data is demonstrated as follows:
 |-----------------------------|---------:|
 | Video Number                | 31      |
 | Processed Data Number       | 152     |
-| Commentary length per video | 3119 |
+| Commentary length per video | 3,119 |
 | Clue length per data        | 22  |
 | Correct Clues               | 89      |
 | Incorrect Clues             | 63      |
