@@ -6,10 +6,10 @@ This repository stores codes for the tryout project Geoguessr, which takes a lis
 
 The project can be divided into several subtasks:
 
-- Youtube Playlist [Play Along] --> Youtube Video and Geoguessr Game URLs (utils.play_list)
-- Video URLs --> Video Transcrips (utils.youtube_transcript)
-- Geoguessr URLs --> Locations (utils.location)
-- Locations --> Images (utils.images)
+- Youtube Playlist [Play Along] &rarr; Youtube Video and Geoguessr Game URLs (utils.play_list)
+- Video URLs &rarr; Video Transcrips (utils.youtube_transcript)
+- Geoguessr URLs &rarr; Locations (utils.location)
+- Locations &rarr; Images (utils.images)
 
 ## Data
 
@@ -30,7 +30,10 @@ After processing, the details of data is demonstrated as follows:
 | Correct Clues               | 89      |
 | Incorrect Clues             | 63      |
 
-## Requirements
+
+## Usage
+
+### Dependencies
 
 After cloning the repo and get into the dictionary, run the following command to install the requirements:
 
@@ -38,15 +41,15 @@ After cloning the repo and get into the dictionary, run the following command to
 pip install -r requirements.txt
 ```
 
-## Usage
+Set ncfa_cookie, Google Cloud Platform API-KEY, and OPENAI API-KEY in configration.py
 
-First, set ncfa_cookie, Google Cloud Platform API-KEY, and OPENAI API-KEY in configration.py
+```json
+NCFA = "xxxxxxx" // The ncfa cookie is for data from Geoguessr.com. To get one, login to geoguessr, open dev tools, go to Application/Storage/Cookies and copy the value of _ncfa.
 
-- The ncfa cookie is for data from Geoguessr.com. To get one, login to geoguessr, open dev tools, go to Application/Storage/Cookies and copy the value of _ncfa.
+GCP_API_KEY = "xxxxxx-xxxxxx" //The GCP API-KEY is for images from google streetview.
 
-- The GCP API-KEY is for images from google streetview.
-
-- The OPENAI KEY is for getting clues from transcripts, which is not neccessary for simply getting the original data.
+OPENAI_API_KEY = "sk-xxxxxxxx" //The OPENAI KEY is for getting clues from transcripts, which is not neccessary for simply getting the original data.
+```
 
 The Geoguessr [Play Along Youtube Playlist] is https://www.youtube.com/playlist?list=PL_japiE6QKWq-MCBz_wNr92yw0-HWeY2v.
 
@@ -66,7 +69,7 @@ python -m main
 
 ## Details
 
-After processing, the data item in processed_data.jsonl are like follows:
+After processing, the data item in processed_data.jsonl are as follows:
 
 ```json
 {
@@ -99,7 +102,7 @@ I did simple preliminary experiments on our dataset. I prompted GPT-4-vision to 
 "depends on the details in this image, please determine where it is. You don't have to be exactly correct, just make a guess. Return me only a location, with format like [lat, lng]."
 ```
 
-Since we are measuring the distance between the correct answer location and model response location, I choosed the Haversine Distance to evaluate the answer and report the average Haversine Distance of the model:
+Since we are measuring the distance between the correct answer location and model response location, I choosed the **Haversine Distance** to evaluate the answer and report the average Haversine Distance of the model:
 
 | w/ or w/o clues | Avg. Dist |
 |-----------------|-----------|
