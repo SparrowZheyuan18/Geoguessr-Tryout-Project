@@ -46,9 +46,9 @@ Set ncfa_cookie, Google Cloud Platform API-KEY, and OPENAI API-KEY in configrati
 ```
 NCFA = "xxxxxxx" // The ncfa cookie is for data from Geoguessr.com. To get one, login to geoguessr, open dev tools, go to Application/Storage/Cookies and copy the value of _ncfa.
 
-GCP_API_KEY = "xxxxxx-xxxxxx" //The GCP API-KEY is for images from google streetview.
+GCP_API_KEY = "xxxxxx-xxxxxx" // The GCP API-KEY is for images from google streetview.
 
-OPENAI_API_KEY = "sk-xxxxxxxx" //The OPENAI KEY is for getting clues from transcripts, which is not neccessary for simply getting the original data.
+OPENAI_API_KEY = "sk-xxxxxxxx" // The OPENAI KEY is for getting clues from transcripts, which is not neccessary for simply getting the original data.
 ```
 
 The Geoguessr [Play Along Youtube Playlist] is https://www.youtube.com/playlist?list=PL_japiE6QKWq-MCBz_wNr92yw0-HWeY2v.
@@ -116,7 +116,7 @@ Scripts and data for this experiment are in the experiment folder.
 
 ## Automatic Playing Geoguessr Demo
 
-Before I found how to request Geoguessr game information, I developed a script to automatically play Geoguessr game, by manipulating the website. This script can be use to drive Language Models to play this game directly. To try this out, simply run the following codes:
+Before I found how to request Geoguessr game information, I developed a script to automatically play Geoguessr game, by manipulating the website. In the future, this script could be used to drive Language Models to play this game directly. To try this out, simply run the following codes:
 
 ```python
 python -m utils.simulate_geoguessr
@@ -128,8 +128,8 @@ Note that this script can be really slow.
 
 There are possible issues with this dataset. 
 
-- **Updating of google map**: The google streetview api updates their service and streetview images from time to time. Some of the locations in Geoguessr games are no longer available, others might encounter a few mismatches between the image and the clues after it has been updated (e.g. A recognizable sign was removed).
+- **Updating of google map**: The google streetview api updates their service and streetview images from time to time. Some of the locations in Geoguessr games are no longer available (I have dropped these data, which is tagged as "image_not_available" in full_data.jsonl), others might encounter a few **mismatches** between the image and the clues after it has been updated (e.g. A recognizable sign was removed).
 
-- **Quality of clues**: The clues are now collected based of the transcripts from Youtube, with is quite noisy. Though I use GPT to paraphrase the clues, it can be too easy or too hard for models to do the task. (e.g. the clues state the location directly, or clues are not that helpful)
+- **Quality of clues**: The clues are now collected based on the transcripts from Youtube, with is quite **noisy**. Though I use GPT to paraphrase the clues, it can be too easy or too hard for models to do the task. (e.g. the clues state the location directly, or the clues that are not that helpful)
 
-- **Our contributions:** [(Haas et al., 2024)](https://arxiv.org/pdf/2307.05845.pdf) builds models to do geoguessr tasks and achieved good results. Their dataset is similar to us, except for the CoT reasoning part. I'm considering ideas like [(Qi et al., 2024)](https://arxiv.org/pdf/2402.04236), which train Vision Language Models to dive into details of images, as our task is quite like manipulate the images to discover clues and do visual reasoning.
+- **Our contributions:** [(Haas et al., 2024)](https://arxiv.org/pdf/2307.05845.pdf) builds models to do geoguessr tasks and achieved good results. Their dataset is similar to ours, except for the CoT reasoning part. I'm considering ideas like [(Qi et al., 2024)](https://arxiv.org/pdf/2402.04236), which trains Vision Language Models to dive into details of images, as our task is quite like manipulating the images to discover clues and do visual reasoning.
