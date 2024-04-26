@@ -22,11 +22,11 @@ The data are in the data file.
 After processing, the details of data is demonstrated as follows:
 
 | Category                    | Value   |
-|-----------------------------|---------|
+|-----------------------------|---------:|
 | Video Number                | 31      |
 | Processed Data Number       | 152     |
-| Commentary length per video | 3119.61 |
-| Clue length per data        | 22.95   |
+| Commentary length per video | 3119 |
+| Clue length per data        | 22  |
 | Correct Clues               | 89      |
 | Incorrect Clues             | 63      |
 
