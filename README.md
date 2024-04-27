@@ -13,7 +13,7 @@ The project can be divided into several subtasks:
 
 ## Data
 
-The data are in the data file. 
+The data is in the data file. 
 
 - **urls.json** is the Youtube and Geoguessr urls of the [Play Along] playlist.
 - **full_data.jsonl** is the raw retrieved data of images (path), transcripts, and locations.
