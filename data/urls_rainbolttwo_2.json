@@ -1,0 +1,630 @@
+[
+    {
+        "youtube_url": "https://youtube.com/watch?v=HSv4uX0O0Fo&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=1",
+        "challenge_url": "https://www.geoguessr.com/challenge/7rdBzc9E33MwDzjg"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=erlTXZ43GR0&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=2",
+        "challenge_url": "https://www.geoguessr.com/challenge/iuLaj2FBZp9iRcpM"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=OANHKBysTfY&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=3",
+        "challenge_url": "https://www.geoguessr.com/challenge/oRGoOIEmR37UEalH"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=zcGu5xkjLhU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=4",
+        "challenge_url": "https://www.geoguessr.com/challenge/rSoOqSV8OtLB9wrV"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=8o60iI4-ZYw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=5",
+        "challenge_url": "https://www.geoguessr.com/challenge/0gF15z3CXRLkdT2G"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=fpFdJPBVq1M&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=6",
+        "challenge_url": "https://www.geoguessr.com/challenge/Yyor1I8HOwugui8L"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=o2aS_fsWMso&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=7",
+        "challenge_url": "https://www.geoguessr.com/challenge/QiPxSwF4dqSl9AEL"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=lpy01Oe6-lc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=8",
+        "challenge_url": "https://www.geoguessr.com/challenge/JyVz9aJOkzZjlw6w"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=D4Nm9Gdb9bU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=9",
+        "challenge_url": "https://www.geoguessr.com/challenge/7MHdSszXF9NsZ0cQ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=DHzU0a23hWU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=10",
+        "challenge_url": "https://www.geoguessr.com/challenge/BdHwDAa0V3CgAmDo"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=-NE2eyKu83o&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=11",
+        "challenge_url": "https://www.geoguessr.com/challenge/N2j5CJivWlpbHD25"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=pDWeqEqU1Pw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=12",
+        "challenge_url": "https://www.geoguessr.com/challenge/eqXHzB94zWfMbetB"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=J2_73Dy2ckg&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=13",
+        "challenge_url": "https://www.geoguessr.com/challenge/KgG3CIdosEIpwAC9"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=dSK-gmDbYXw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=14",
+        "challenge_url": "https://www.geoguessr.com/challenge/Mkp59tqpsjC1JuSO"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=CKdi5gBa7tQ&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=15",
+        "challenge_url": "https://www.geoguessr.com/challenge/B2b5elG4onwO4C2y"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=hgmfMbHUoVU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=16",
+        "challenge_url": "https://www.geoguessr.com/challenge/cHgTlFc6vXkVHVDk"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=5mj2F3HfQ8s&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=17",
+        "challenge_url": "https://www.geoguessr.com/challenge/U9uTA3GnRNWQKhog"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=GnZBBukj9eg&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=18",
+        "challenge_url": "https://www.geoguessr.com/challenge/zM9WBACPHmUHtzfo"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=Taw_xm8y8H0&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=19",
+        "challenge_url": "https://www.geoguessr.com/challenge/ZNJFOA5swMHCkuOZ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=QW4vz24EA04&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=20",
+        "challenge_url": "https://www.geoguessr.com/challenge/3g0XBuIvSbYHt1T3"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=c-RpiOoEmeY&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=21",
+        "challenge_url": "https://www.geoguessr.com/challenge/P51258H41G1PQ4jI"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=VYP54bAM954&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=22",
+        "challenge_url": "https://www.geoguessr.com/challenge/vJouf9cwpoT1sAgc"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=A33r8-7Yqf8&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=23",
+        "challenge_url": "https://www.geoguessr.com/challenge/LbyrWeF2esSxtuyh"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=B4d3ef4Nx0A&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=24",
+        "challenge_url": "https://www.geoguessr.com/challenge/UlgPqEYCtmC3G8Rq"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=67AOfbVJEf4&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=25",
+        "challenge_url": "https://www.geoguessr.com/challenge/XNaPj6HEzFjxqtqO"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=wZ6HU8Xgyk8&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=26",
+        "challenge_url": "https://www.geoguessr.com/challenge/9fr0KoIcbiAm2Y3N"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=AlM3JV9EXig&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=27",
+        "challenge_url": "https://www.geoguessr.com/challenge/ityhGHxUzfyI1rS7"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=X9EtpdPJt4A&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=28",
+        "challenge_url": "https://www.geoguessr.com/challenge/eqGAtJmVwayMQrY7"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=AYv0gvRoZss&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=29",
+        "challenge_url": "https://www.geoguessr.com/challenge/YFXOMRPSgOe6q3AW"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=wwpoqhysHhc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=30",
+        "challenge_url": "https://www.geoguessr.com/challenge/GQ37WmhmAxfqO2pR"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=lLkuZbUvGpA&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=31",
+        "challenge_url": "https://www.geoguessr.com/challenge/9NuU1Fm3PpfdTbFw"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=eHf7hWYU_Do&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=32",
+        "challenge_url": "https://www.geoguessr.com/challenge/EAnjg3VrxV9Fu1st"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=APzXMjZsVko&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=33",
+        "challenge_url": "https://www.geoguessr.com/challenge/rGrI3qqKDHKDKga0"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=YvOhuPUvGX0&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=34",
+        "challenge_url": "https://www.geoguessr.com/challenge/iAxwPdc4N3PHrbUi"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=Q1cApd8xh7Y&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=35",
+        "challenge_url": "https://www.geoguessr.com/challenge/n7o593MbU5lbSdqo"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=ZAJ16CoJ8ZY&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=36",
+        "challenge_url": "https://www.geoguessr.com/challenge/JmH3y6hM3BkKHq2H"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=9Y_rf8vUdno&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=37",
+        "challenge_url": "https://www.geoguessr.com/challenge/MdXVQQRMjWjT1T4H"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=Lrgg6KXX3Wg&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=38",
+        "challenge_url": "https://www.geoguessr.com/challenge/Rn9qtJZv1tYt7xtc"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=QuZrZgtoWGc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=39",
+        "challenge_url": "https://www.geoguessr.com/challenge/pcue5oV5ljkIANO5"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=4LBQxBXYSvc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=40",
+        "challenge_url": "https://www.geoguessr.com/challenge/wPFJgEmtgbJ1A2SA"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=BSB5cZyygPc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=41",
+        "challenge_url": "https://www.geoguessr.com/challenge/zcG3oB1VEXf99XWZ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=lJZCxtTrt4A&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=42",
+        "challenge_url": "https://www.geoguessr.com/challenge/svSlCvIgJ611fYbi"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=GZr8LiEKceU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=43",
+        "challenge_url": "https://www.geoguessr.com/challenge/a81z3eStP3jem0uC"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=XKD2jThkvHE&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=44",
+        "challenge_url": "https://www.geoguessr.com/challenge/ZONrQAvRXzYc0myN"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=t0e6tbwIkeg&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=45",
+        "challenge_url": "https://www.geoguessr.com/challenge/v58iZTt9tDZNRooh"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=_6fcPuOA1-4&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=46",
+        "challenge_url": "https://www.geoguessr.com/challenge/4jJCmFVhFlV4VQdO"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=Jd9Zf-7hj0c&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=47",
+        "challenge_url": "https://www.geoguessr.com/challenge/lLAWkgf8I5Zq5dqZ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=13CB_-qwrqI&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=48",
+        "challenge_url": "https://www.geoguessr.com/challenge/E558tIZZ9BxB5FOU"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=K5GTptJ1Xxs&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=49",
+        "challenge_url": "https://www.geoguessr.com/challenge/wPN8TQSdk2c6JhOZ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=gbOksFN0mmQ&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=50",
+        "challenge_url": "https://www.geoguessr.com/challenge/VUbz140Ip49XryVA"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=utX-c60TLGY&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=51",
+        "challenge_url": "https://www.geoguessr.com/challenge/Vq8HiZ6Tm1t8Gg5n"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=gEw-M7RVC4Q&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=52",
+        "challenge_url": "https://www.geoguessr.com/challenge/73vfZAaAiM3YqHFj"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=DcAuyMPQmmA&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=53",
+        "challenge_url": "https://www.geoguessr.com/challenge/p9xCZCjc75KRF6Vs"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=cjtgbk4Ilmw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=54",
+        "challenge_url": "https://www.geoguessr.com/challenge/Be4JGgCofCxtzt0X"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=UPfvNYunQXE&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=55",
+        "challenge_url": "https://www.geoguessr.com/challenge/8UPknR01j7jTAn0e"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=jdaQQ0WdYZw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=56",
+        "challenge_url": "https://www.None"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=oxHcb64go3Q&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=57",
+        "challenge_url": "https://www.geoguessr.com/challenge/6ldTiWTV8tTVCWnc"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=qeU3NpKEGV4&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=58",
+        "challenge_url": "https://www.geoguessr.com/challenge/3fnRjWP3gkqq55pF"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=oLAMNUQjnIo&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=59",
+        "challenge_url": "https://www.geoguessr.com/challenge/4SCeRZSlJCMLBa5u"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=rGyh0VZ0ZTc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=60",
+        "challenge_url": "https://www.geoguessr.com/challenge/XkRT657e18JZJr4q"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=yGWqgfFH0Xg&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=61",
+        "challenge_url": "https://www.geoguessr.com/challenge/OSJ3cudGVZcGwwMv"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=Jo0cEzQihtA&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=62",
+        "challenge_url": "https://www.geoguessr.com/challenge/qwc3GIWAW9NMX9op"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=a08g9e9fMVg&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=63",
+        "challenge_url": "https://www.geoguessr.com/challenge/5ubmQV1ZobmzVcnJ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=8HdALsiq_gs&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=64",
+        "challenge_url": "https://www.geoguessr.com/challenge/4H9hUG68sYqNsNO8"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=FuLHRc7Y7gI&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=65",
+        "challenge_url": "https://www.geoguessr.com/challenge/hiuY7vijmvvUbhUA"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=o5VZB4cGlZM&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=66",
+        "challenge_url": "https://www.geoguessr.com/challenge/Hs0XgV7doPxfbZ3E"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=s8rYTYNFbOM&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=67",
+        "challenge_url": "https://www.geoguessr.com/challenge/SztZaShv2L6bShAA"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=eJHNQyOMWrQ&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=68",
+        "challenge_url": "https://www.geoguessr.com/challenge/Jrm4dbz4zaLwb1x0"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=ZdemXHPJTmU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=69",
+        "challenge_url": "https://www.geoguessr.com/challenge/ANsJequj2N1aNpuJ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=4q3VVQIizwQ&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=70",
+        "challenge_url": "https://www.geoguessr.com/challenge/zUk7UIk9SH0STo1X"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=WDGhGKhNojI&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=71",
+        "challenge_url": "https://www.geoguessr.com/challenge/Ox3UUuzwIHcdeAI8"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=uZGeSqLj5XA&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=72",
+        "challenge_url": "https://www.geoguessr.com/challenge/10g31P2suvNIhx9D"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=vFt2Qnw0eaE&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=73",
+        "challenge_url": "https://www.geoguessr.com/challenge/mll1E1L9WLpFwDkl"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=AMwk6d5FiQ0&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=74",
+        "challenge_url": "https://www.geoguessr.com/challenge/D0wcpcoSdiTCcJBv"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=mMyS9mPm7xQ&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=75",
+        "challenge_url": "https://www.geoguessr.com/challenge/PgOVXYLKWLhzs3Ei"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=mNWMco3v77s&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=76",
+        "challenge_url": "https://www.geoguessr.com/challenge/dW0FqWLwaTzDlC9K"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=5lGvLswAq7A&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=77",
+        "challenge_url": "https://www.geoguessr.com/challenge/D2jCxQqOyP7Zpaeg"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=G3Q55qHzPwc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=78",
+        "challenge_url": "https://www.geoguessr.com/challenge/4lo4VrjoyZwlBjoy"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=mtu9Qba2tGg&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=79",
+        "challenge_url": "https://www.geoguessr.com/challenge/LyWLxNUP2K4pe1Vh"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=974YrRVm8sw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=80",
+        "challenge_url": "https://www.geoguessr.com/challenge/58riBnYgXgUpZYum"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=8-DNE1tuGww&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=81",
+        "challenge_url": "https://www.geoguessr.com/challenge/0wYL8bNCb9RJDVYM"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=DfiPLjR-WcU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=82",
+        "challenge_url": "https://www.geoguessr.com/challenge/KgyCgjC4LzyTtkeZ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=EwD1QMEwiEY&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=83",
+        "challenge_url": "https://www.geoguessr.com/challenge/VVsYwSEIBJ9rMjQt"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=oNivxJZk98M&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=84",
+        "challenge_url": "https://www.geoguessr.com/challenge/2Kd4jvZcxkcXf4u0"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=jrbGtlsrVRw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=85",
+        "challenge_url": "https://www.geoguessr.com/challenge/ybNuL0vmcuFoVPZY"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=oLCgYfz-f_E&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=86",
+        "challenge_url": "https://www.geoguessr.com/challenge/JkUicIBilmusvMp8"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=FYkWhIYLEBA&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=87",
+        "challenge_url": "https://www.geoguessr.com/challenge/kUE5RAsPcxgyY4xT"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=3RZ6Mbrpdq8&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=88",
+        "challenge_url": "https://www.geoguessr.com/challenge/vNUg43YKYwFwMb7U"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=AI5wKlFHICo&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=89",
+        "challenge_url": "https://www.geoguessr.com/challenge/Ebg3tnvw4hNQY3A0"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=cxW07y1pU9U&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=90",
+        "challenge_url": "https://www.geoguessr.com/challenge/Qrdc1Vic8fEtBslY"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=Zrggtxx-bp4&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=91",
+        "challenge_url": "https://www.geoguessr.com/challenge/6aKBkwLGnDtPO5YY"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=F5P2ZPmWVSs&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=92",
+        "challenge_url": "https://www.geoguessr.com/challenge/A0lxZCYOFrBTl4aL"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=3NpKiLAlZ1o&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=93",
+        "challenge_url": "https://www.geoguessr.com/challenge/vpipqsysAWrxdSyq"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=jlgF48MP4qk&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=94",
+        "challenge_url": "https://www.geoguessr.com/challenge/PzhM4JAFFzJAqXut"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=2m00y2A7obE&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=95",
+        "challenge_url": "https://www.geoguessr.com/challenge/qRcJQbNs7aQBOzrm"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=gt9LWGIhpaU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=96",
+        "challenge_url": "https://www.geoguessr.com/challenge/ceIRi6L4wgXupW6G"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=BBlf79lwlmc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=97",
+        "challenge_url": "https://www.geoguessr.com/challenge/FeLYE1AgE96aXXRB"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=OxxkWHZtFe4&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=98",
+        "challenge_url": "https://www.geoguessr.com/challenge/3srHhWHQ5ZlU84w0"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=HkQBjPJUYLQ&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=99",
+        "challenge_url": "https://www.geoguessr.com/challenge/TNIFwoD9qXyUE32o"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=tRzm_QcGTso&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=100",
+        "challenge_url": "https://www.geoguessr.com/challenge/Spc9kLsAhTHknYon"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=oIZkXRaiipw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=101",
+        "challenge_url": "https://www.geoguessr.com/challenge/Ejja30oYq6ZwEZof"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=cWCCRVXw6vM&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=102",
+        "challenge_url": "https://www.geoguessr.com/challenge/DSE7SjNwlqhaUV0I"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=xL4LA3GGb1g&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=103",
+        "challenge_url": "https://www.geoguessr.com/challenge/6q0SjlJxbOPJyqjx"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=GXIqLIEZcxo&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=104",
+        "challenge_url": "https://www.geoguessr.com/challenge/J97nLkAFfUMJLGwF"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=U6jwzCvilkA&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=105",
+        "challenge_url": "https://www.geoguessr.com/challenge/ITeiCjlS17JStMVZ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=YlNyudz135k&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=106",
+        "challenge_url": "https://www.geoguessr.com/challenge/ekk4RWRvIgOEHkUH"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=zodu-NiBhxU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=107",
+        "challenge_url": "https://www.geoguessr.com/challenge/0xRu0JmOq2MvBPej"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=7YU5R5FKh98&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=108",
+        "challenge_url": "https://www.geoguessr.com/challenge/qUgUIe1TRRf5uE4v"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=qgsYZ73R2a4&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=109",
+        "challenge_url": "https://www.geoguessr.com/challenge/KIZjUUe9CLOYMqrv"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=nlYmZiiVdTw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=110",
+        "challenge_url": "https://www.geoguessr.com/challenge/xpAK5PiDprhtOimu"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=-zqIv_MGen4&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=111",
+        "challenge_url": "https://www.geoguessr.com/challenge/QlcAOK7i8pnWfxlo"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=SH6UR8238gg&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=112",
+        "challenge_url": "https://www.geoguessr.com/challenge/T0JGl2qqswnV9HxM"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=BUmWe-dEDo0&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=113",
+        "challenge_url": "https://www.geoguessr.com/challenge/KLjxSXajPE6hJUsP"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=DtSh1caRsUw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=114",
+        "challenge_url": "https://www.geoguessr.com/challenge/9sYnjRVvsxmmnbq4"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=uUZp5WBsbAY&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=115",
+        "challenge_url": "https://www.geoguessr.com/challenge/lIclAmA2M0npC8hV"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=C4rAI_Uc2z0&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=116",
+        "challenge_url": "https://www.geoguessr.com/challenge/rCPoFn6jqvWJ4Gh0"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=uVei61k1xiQ&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=117",
+        "challenge_url": "https://www.geoguessr.com/challenge/hbnWalf3jOPV5uc4"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=HYf1k40Xwg0&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=118",
+        "challenge_url": "https://www.geoguessr.com/challenge/74PQj8cuUHHWG0Lg"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=GVcI5udqQCQ&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=119",
+        "challenge_url": "https://www.geoguessr.com/challenge/ge6P0EN5YKA9hg2Z"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=Xo6NjJsbRdk&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=120",
+        "challenge_url": "https://www.geoguessr.com/challenge/yeiDNH60LrUhosMi"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=r7xlbBIV2pI&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=121",
+        "challenge_url": "https://www.geoguessr.com/challenge/xR5URzVeY3HtM8NK"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=89zCmnswOvo&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=122",
+        "challenge_url": "https://www.geoguessr.com/challenge/LDl0jMrf43c6WIVu"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=gjtSo7YxENQ&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=123",
+        "challenge_url": "https://www.geoguessr.com/challenge/xJkwsMHRjvElynmb"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=pa9E0Aj-WOc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=124",
+        "challenge_url": "https://www.geoguessr.com/challenge/8ykymXUMFAMZYbmO"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=ltzGtXe4QIU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=125",
+        "challenge_url": "https://www.geoguessr.com/challenge/9BhUURjRh0gol4nl"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=BcllFVY2U2g&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=126",
+        "challenge_url": "https://www.geoguessr.com/challenge/sdjn3RnGmyw8ufs7"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=Uor6M5jGAqI&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=127",
+        "challenge_url": "https://www.geoguessr.com/challenge/eVTBKaHmleLgkqAV"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=395NPHmRkOU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=128",
+        "challenge_url": "https://www.geoguessr.com/challenge/ziHck69XSzVBEupJ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=YUOrPBgJ-zE&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=129",
+        "challenge_url": "https://www.geoguessr.com/challenge/CvepUYiIS4TkNpph"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=7nuA_FvxhUw&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=130",
+        "challenge_url": "https://www.geoguessr.com/challenge/4PZJtZIZnHmguHk4"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=eWeNPBPYFBU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=131",
+        "challenge_url": "https://www.geoguessr.com/challenge/gs1pvgKmLLrfYM1V"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=dPS-nljaSJo&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=132",
+        "challenge_url": "https://www.geoguessr.com/challenge/VoKPXM1QWgmucphC"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=3JLvy_hJVCM&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=133",
+        "challenge_url": "https://www.geoguessr.com/challenge/B5tmIeYbDGGaYO3a"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=dbblIMrGBQ4&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=134",
+        "challenge_url": "https://www.geoguessr.com/challenge/IRyRlCmGD9WXusOM"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=nLDFCVlLjZ0&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=135",
+        "challenge_url": "https://www.geoguessr.com/challenge/5r16Farkfcmz7R4H"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=nPwRkyZWr3Y&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=136",
+        "challenge_url": "https://www.geoguessr.com/challenge/JlcLZe6CJWGz2A0j"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=0yB1s3Z9P0Y&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=137",
+        "challenge_url": "https://www.geoguessr.com/challenge/rjImAxTFBkaD3SuQ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=pJpXYcjl7Zo&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=138",
+        "challenge_url": "https://www.geoguessr.com/challenge/khcBHFUjdZx1Xpbw"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=ZxfZ1YkQmFM&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=139",
+        "challenge_url": "https://www.geoguessr.com/challenge/u2V1u7csUY4ZEhbV"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=YPglQNX3ahE&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=140",
+        "challenge_url": "https://www.geoguessr.com/challenge/4loGrqitGwSeuoTh"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=SG-dW3khOVo&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=141",
+        "challenge_url": "https://www.geoguessr.com/challenge/AKoAy3d4WR9ayF0g"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=SjYOMIW4ZjM&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=142",
+        "challenge_url": "https://www.geoguessr.com/challenge/LjoUA1F1fOshp860"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=K5JvXLPp9X4&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=143",
+        "challenge_url": "https://www.geoguessr.com/challenge/Bu1aiTWTdlipIs2q"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=XxBBwgbEdYc&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=144",
+        "challenge_url": "https://www.geoguessr.com/challenge/7sII5IvPK2QohnEG"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=xqqrAt5H0KI&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=145",
+        "challenge_url": "https://www.geoguessr.com/challenge/u8UqlhMHbGD6NEM5"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=3chn3BvWwN0&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=146",
+        "challenge_url": "https://www.geoguessr.com/challenge/RAVyI2n4HEmJoz7L"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=iN8RBrFR6_s&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=147",
+        "challenge_url": "https://www.geoguessr.com/challenge/7UmaBTPWiDL0sclI"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=gswf-OY73YA&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=148",
+        "challenge_url": "https://www.geoguessr.com/challenge/LoqDRAFO7HMIk1LJ"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=pSI15p8M2Y8&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=149",
+        "challenge_url": "https://www.geoguessr.com/challenge/jodf64XwQlsVLmds"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=HRU-7T8PmRg&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=150",
+        "challenge_url": "https://www.geoguessr.com/challenge/Ov8RbB8xYMz4gIA4"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=fMDenmLbspU&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=151",
+        "challenge_url": "https://www.geoguessr.com/challenge/GiuAwCM3K83QFSrN"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=zjI5SMROCes&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=152",
+        "challenge_url": "https://www.geoguessr.com/challenge/uvBgn7QfGhBNfppc"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=broXP_LpLgA&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=153",
+        "challenge_url": "https://www.geoguessr.com/challenge/bjgIEV4u0gaVdnY6"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=K16LyUyokkY&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=154",
+        "challenge_url": "https://www.geoguessr.com/challenge/ZLzgFHzIFKhlOrJ1"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=GGlfKwL4hus&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=155",
+        "challenge_url": "https://www.geoguessr.com/challenge/x2ImdfPHX4bmVOCC"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=elZz_EWxPXY&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=156",
+        "challenge_url": "https://www.geoguessr.com/challenge/Wh9quLw1NRLof7lg"
+    },
+    {
+        "youtube_url": "https://youtube.com/watch?v=sUIsbVRBajE&list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz&index=157",
+        "challenge_url": "https://www.geoguessr.com/challenge/onjP1zI3wNvO1Orh"
+    }
+]

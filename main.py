@@ -8,9 +8,13 @@ from configuration import Config
 
 
 data_path = "data/urls.json"
+data_path = "data/urls_rainbolttwo_1.json"
 image_path = "data/images"
+image_path = "data/images_rainbolttwo_1"
 full_data_path = "data/full_data.jsonl"
+full_data_path = "data/full_data_rainbolttwo_1.jsonl"
 processed_data_path = "data/processed_data.jsonl"
+processed_data_path = "data/processed_data_rainbolttwo_1.jsonl"
 
 
 def load_data(path):
@@ -42,8 +46,12 @@ def get_data_of_videos():
 
         # get youtube transcript
         video_id = parse_video_id(youtube_url)
-        transcript_list = get_script_from_youtube(video_id)
-        data_item["transcript"] = merge_transcript(transcript_list)
+        try:
+            transcript_list = get_script_from_youtube(video_id)
+            data_item["transcript"] = merge_transcript(transcript_list)
+        except:
+            print("no transcript available")
+            continue
 
         challenge_id = parse_challenge_id(challenge_url)
 
@@ -54,8 +62,11 @@ def get_data_of_videos():
         for i, item in enumerate(data_item["locations"]):
             print(f"Getting images for round {i+1}")
             location = f"{item['lat']}, {item['lng']}"
-            get_images(location, id=challenge_id, path=image_path, round=i+1)
+            try:
+                get_images(location, id=challenge_id, path=image_path, round=i+1)
             # if image does not exist, pass
+            except:
+                data_item["image_not_available"] = [i+1]
             try:
                 combine_images(image_path, challenge_id, round=i+1)
             except:
@@ -71,7 +82,7 @@ def get_data_of_videos():
 
 def get_processed_data():
     data = load_data(full_data_path)
-    for item in tqdm(data):
+    for item in tqdm(data[13:]):
         transcript = item["transcript"]
         locations = item["locations"]
         images_path = item["images_path"]
@@ -100,6 +111,6 @@ def get_processed_data():
         
 
 if __name__ == "__main__":
-    dump_jsonl(get_data_of_videos(), full_data_path)
+    # dump_jsonl(get_data_of_videos(), full_data_path)
     dump_jsonl(get_processed_data(), processed_data_path)
 

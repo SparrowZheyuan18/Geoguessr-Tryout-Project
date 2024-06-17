@@ -2,13 +2,17 @@ import requests
 import json
 import re
 import time
-from pytube import Playlist
+from pytube import Playlist, YouTube
 from bs4 import BeautifulSoup
 from requests.exceptions import SSLError
 
 
 play_list = 'https://www.youtube.com/playlist?list=PL_japiE6QKWq-MCBz_wNr92yw0-HWeY2v'
+play_list = 'https://www.youtube.com/playlist?list=PL9NsJvmALD3whYFwBQ0ByskPwkcpCFyzz'
+play_list = 'https://www.youtube.com/playlist?list=PL9NsJvmALD3zeZ3xbPgj3_hDwexMwJF0_'
 output_file = 'urls.json'
+output_file = 'urls_rainbolttwo_2.json'
+output_file = 'urls_rainbolttwo_1.json'
 
 
 def fetch_playlist_details(playlist_url):
@@ -26,6 +30,7 @@ def fetch_playlist_details(playlist_url):
             'youtube_url': video_url,
             'challenge_url': challenge_url
         })
+        # print(data_list)
     return data_list
 
 
@@ -38,7 +43,11 @@ def save_to_json(data_list, output_file):
 
 def fetch_video_description_links(video_url, max_retries=5):
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Connection': 'keep-alive'
     }
     attempt = 0
     while attempt < max_retries:
@@ -46,6 +55,7 @@ def fetch_video_description_links(video_url, max_retries=5):
             response = requests.get(video_url, headers=headers)
             if response.status_code == 200:
                 soup = BeautifulSoup(response.text, 'html.parser')
+                # print(soup)
                 script_tag = soup.find('script', text=re.compile('ytInitialPlayerResponse'))
                 if script_tag:
                     try:
@@ -54,11 +64,22 @@ def fetch_video_description_links(video_url, max_retries=5):
                         data = json.loads(json_text)
                         description = data.get('videoDetails', {}).get('shortDescription', '')
                         base_url = "geoguessr.com/challenge/"
+                        special_base_url = "TODAY'S CHALLENGE (PLAY BEFORE WATCHING):\nhttps://www.geoguessr.com/challenge/"
+                        if special_base_url in description:
+                            pattern = rf'{re.escape(special_base_url)}[a-zA-Z0-9]{{16}}'
+                            description = re.search(pattern, description).group(0)
+                        else:
+                            return None
                         pattern = rf'{re.escape(base_url)}[a-zA-Z0-9]{{16}}'
                         match = re.search(pattern, description) 
-                        result = match.group(0) if match else None
-                        result = f"https://www.{result}"
-                        print(result)
+                        # print(match)
+                        if match:
+                            result = match.group(0)
+                            result = f"https://www.{result}"
+                            print(result)
+                            return result
+                        else:
+                            result = None
                         return result
                     except Exception as e:
                         print(f'Failed to fetch video description: {e}')

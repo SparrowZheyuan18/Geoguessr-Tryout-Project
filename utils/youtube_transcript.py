@@ -48,7 +48,7 @@ def json_parser(text):
     return data
 
 
-@retry(tries=5, delay=2)
+@retry(tries=5, delay=10)
 def split_transcript(transcript, paraphrase=False):
     if paraphrase:
         prompt = paraphrase_prompt
