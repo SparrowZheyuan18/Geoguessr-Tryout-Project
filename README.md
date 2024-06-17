@@ -1,4 +1,4 @@
-# Geoguesser-Tryout-Project
+# Geoguessr-Tryout-Project
 
 This repository stores codes for the tryout project Geoguessr, which takes a list of links of youtube videos that play the game Geoguessr and its corresponding games, and outputs a json that points to locations, commentary (transcripts), and images.
 
@@ -13,7 +13,7 @@ The project can be divided into several subtasks:
 
 ## Data
 
-The data are in the data file. 
+The data is in the data file. 
 
 - **urls.json** is the Youtube and Geoguessr urls of the [Play Along] playlist.
 - **full_data.jsonl** is the raw retrieved data of images (path), transcripts, and locations.
