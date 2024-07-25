@@ -12,9 +12,10 @@ data_path = "data/urls_rainbolttwo_1.json"
 image_path = "data/images"
 image_path = "data/images_rainbolttwo_1"
 full_data_path = "data/full_data.jsonl"
-full_data_path = "data/full_data_rainbolttwo_1.jsonl"
+full_data_path = "data/full_data_rainbolttwo_2.jsonl"
 processed_data_path = "data/processed_data.jsonl"
 processed_data_path = "data/processed_data_rainbolttwo_1.jsonl"
+processed_data_path = "data/processed_data_rainbolttwo_22.jsonl"
 
 
 def load_data(path):
@@ -82,7 +83,7 @@ def get_data_of_videos():
 
 def get_processed_data():
     data = load_data(full_data_path)
-    for item in tqdm(data[13:]):
+    for item in tqdm(data[:]):
         transcript = item["transcript"]
         locations = item["locations"]
         images_path = item["images_path"]
