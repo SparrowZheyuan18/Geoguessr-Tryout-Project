@@ -83,3 +83,6 @@ if __name__ == "__main__":
     print(len(transcript))
     a = split_transcript(transcript, paraphrase=True)
     print(a)
+
+
+
