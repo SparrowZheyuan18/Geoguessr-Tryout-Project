@@ -8,10 +8,11 @@ from configuration import Config, client
 from retry import retry
 
 
-data_path = "data/urls_zi8gzag.json"
-image_path = "data/images_zi8gzag"
-full_data_path = "data/full_data_zi8gzag.jsonl"
-processed_data_path = "data/processed_data_zi8gzag2.jsonl"
+data_path = "data/urls_geopeter.json"
+image_path = "data/images_geopeter"
+full_data_path = "data/full_data_geopeter.jsonl"
+full_data_path = "data/full_data_geopeter2.jsonl"
+processed_data_path = "data/processed_data_geopeter.jsonl"
 
 
 def load_data(path):
@@ -33,7 +34,7 @@ def dump_jsonl(objects, file_name):
 def get_data_of_videos():
     data = load_data(data_path)
     
-    for videos in tqdm(data[2:]):
+    for videos in tqdm(data[124:]):
         youtube_url = videos["youtube_url"]
         challenge_url = videos["challenge_url"]
         data_item = {
@@ -58,8 +59,10 @@ def get_data_of_videos():
             challenge_id = parse_challenge_id(challenge_url_item)
 
             # get locations
+            print(challenge_id)
             location = asyncio.run(get_locations(challenge_id))
             locations.append(location)
+            print(location)
 
             # get images
             for i, item in enumerate(location):
@@ -119,7 +122,7 @@ def split_transcript(transcript, game_nums, paraphrase=False):
 
 def get_processed_data():
     data = load_data(full_data_path)
-    for item in tqdm(data[14:]):
+    for item in tqdm(data[:]):
         game_nums = len(item["challenge_url"])
         transcript = item["transcript"]
         locations = item["locations"]
@@ -151,6 +154,6 @@ def get_processed_data():
         
 
 if __name__ == "__main__":
-    # dump_jsonl(get_data_of_videos(), full_data_path)
-    dump_jsonl(get_processed_data(), processed_data_path)
+    dump_jsonl(get_data_of_videos(), full_data_path)
+    # dump_jsonl(get_processed_data(), processed_data_path)
 

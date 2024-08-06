@@ -7,15 +7,19 @@ from utils.images import get_images, combine_images
 from configuration import Config
 
 
-data_path = "data/urls.json"
-data_path = "data/urls_rainbolttwo_1.json"
-image_path = "data/images"
-image_path = "data/images_rainbolttwo_1"
-full_data_path = "data/full_data.jsonl"
-full_data_path = "data/full_data_rainbolttwo_2.jsonl"
-processed_data_path = "data/processed_data.jsonl"
-processed_data_path = "data/processed_data_rainbolttwo_1.jsonl"
-processed_data_path = "data/processed_data_rainbolttwo_22.jsonl"
+# data_path = "data/urls.json"
+# data_path = "data/urls_rainbolttwo_1.json"
+data_path = "data/urls_geocatto.json"
+# image_path = "data/images"
+# image_path = "data/images_rainbolttwo_1"
+image_path = "data/images_geocatto"
+# full_data_path = "data/full_data.jsonl"
+# full_data_path = "data/full_data_rainbolttwo_2.jsonl"
+full_data_path = "data/full_data_geocatto.jsonl"
+# processed_data_path = "data/processed_data.jsonl"
+# processed_data_path = "data/processed_data_rainbolttwo_1.jsonl"
+# processed_data_path = "data/processed_data_rainbolttwo_22.jsonl"
+processed_data_path = "data/processed_data_geocatto.jsonl"
 
 
 def load_data(path):

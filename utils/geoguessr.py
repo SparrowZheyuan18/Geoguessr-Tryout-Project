@@ -18,6 +18,7 @@ class Geoguessr:
                 json={},
             ) as response:
                 data = await response.json()
+                # print(data)
                 game_id = data["token"]
             await self.play_game(game_id, i)
     
