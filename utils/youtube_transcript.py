@@ -27,7 +27,9 @@ def parse_video_id(url):
 @retry(tries=5, delay=2)
 def get_script_from_youtube(id):
     video_id = id
+    # print(video_id)
     transcript = YouTubeTranscriptApi.get_transcript(video_id)
+    # print(transcript)
     return transcript
 
 
@@ -75,14 +77,17 @@ def split_transcript(transcript, paraphrase=False):
 
 
 if __name__ == "__main__":
-    video_url = "https://www.youtube.com/watch?v=t98r-YV6LnQ"
-    video_id = parse_video_id(video_url)
-    print(video_id)
-    transcript_list = get_script_from_youtube(video_id)
-    transcript = merge_transcript(transcript_list)
-    print(len(transcript))
-    a = split_transcript(transcript, paraphrase=True)
-    print(a)
+    # video_url = "https://www.youtube.com/watch?v=t98r-YV6LnQ"
+    # video_id = parse_video_id(video_url)
+    # print(video_id)
+    # transcript_list = get_script_from_youtube(video_id)
+    # transcript = merge_transcript(transcript_list)
+    # print(len(transcript))
+    # a = split_transcript(transcript, paraphrase=True)
+    # print(a)
+    url = "https://youtube.com/watch?v=TmHKqEfOGyA&list=PL8U3zlooRj_kAoZeV6_ijpkp2tMWgQHav&index=9"
+    video_id = parse_video_id(url)
+    transcript = get_script_from_youtube(video_id)
 
 
 

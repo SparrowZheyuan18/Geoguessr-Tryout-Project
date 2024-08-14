@@ -127,7 +127,7 @@ def main():
     # clues = extractor.extract_with_llm("data/combined.jpg")
     # print(clues)
 
-    data = load_data("data/processed_data_zi8gzag.jsonl")
+    data = load_data("./data/processed_data_zi8gzag.jsonl")
     corrct = 0
     c_count = 0
     incorrect = 0
@@ -190,7 +190,7 @@ def main():
 
 
 def calculate_score():
-    data = load_data("models/experiments_zi8gzag.jsonl")
+    data = load_data("experiments_zi8gzag.jsonl")
     corrct = 0
     c_count = 0
     incorrect = 0
