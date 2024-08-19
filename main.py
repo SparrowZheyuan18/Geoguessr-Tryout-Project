@@ -1,25 +1,23 @@
 import json
 import asyncio
 from tqdm import tqdm
-from utils.youtube_transcript import parse_video_id, get_script_from_youtube, merge_transcript, split_transcript
-from utils.location import get_locations, parse_challenge_id
-from utils.images import get_images, combine_images
+from openai import OpenAI
+from retry import retry
+# from utils.youtube_transcript import parse_video_id, get_script_from_youtube, merge_transcript, split_transcript
+# from utils.location import get_locations, parse_challenge_id
+# from utils.images import get_images, combine_images
 from configuration import Config
 
 
-# data_path = "data/urls.json"
-# data_path = "data/urls_rainbolttwo_1.json"
-data_path = "data/urls_geogasm.json"
-# image_path = "data/images"
-# image_path = "data/images_rainbolttwo_1"
-image_path = "data/images_geogasm"
-# full_data_path = "data/full_data.jsonl"
-# full_data_path = "data/full_data_rainbolttwo_2.jsonl"
-full_data_path = "data/full_data_geogasm.jsonl"
-# processed_data_path = "data/processed_data.jsonl"
-# processed_data_path = "data/processed_data_rainbolttwo_1.jsonl"
-# processed_data_path = "data/processed_data_rainbolttwo_22.jsonl"
-processed_data_path = "data/processed_data_geogasm.jsonl"
+LLM = OpenAI(api_key=Config.MODEL.OPENAI_API_KEY)
+model = "gpt-4-turbo"
+prompt = "Here is a youtube transcript of a player playing geoguessr, in which he is trying to guess the location based on the current views. The youtuber might or might not starts with prologue, play the game, and might or might not end with a epilogue. Please find useful clues he mentioned when he plays, and return me only the clues (it should be some paraphrased clues separated by commas like xxx brands of cars, court style buildings, driving on the right, etc. don't list points and keep clues concise). Instead of using the player's point of view, state the clues in the scene in a neutral tone without mentioning the player) in the transcripts, and exclude the other parts. The clues should not showing the correctness of the final results. The transcript is as follows:\n"
+
+player = "zi8gzag"
+
+image_path = f"data/images/images_{player}"
+full_data_path = f"data/splited_data/{player}_split.jsonl"
+processed_data_path = f"data/clues_1/clues_{player}.jsonl"
 
 
 def load_data(path):
@@ -113,9 +111,49 @@ def get_processed_data():
                 "image_path": f"{images_path}/{i+1}/combined.jpg"
             }
 
+
+def get_clues():
+    data = load_data(full_data_path)
+    for item in tqdm(data[:]):
+        transcript = item["split_transcript"]
+        location = item["location"]
+        images_path = item["image_path"]
+        # print("calling gpt to split transcript")
+        # transcript_list = split_transcript(transcript, paraphrase=False)
+        print("calling gpt to paraphrased transcripts")
+        @retry(tries=5, delay=10)           
+        def call_gpt():
+            response = LLM.chat.completions.create(
+                model=model,
+                messages=[
+                    {'role': 'user', 'content': [{'type': 'text', 'text': prompt+transcript}]}
+                ],
+            )
+            return response
+        response = call_gpt()
+        content = response.choices[0].message.content
+        # paraphrased_transcript_list = split_transcript(transcript, paraphrase=True)
+        # there are data that misses images
+        # if "image_not_available" in item:
+        #     not_available_list = item["image_not_available"]
+        # else:
+        #     not_available_list = []
+        # for i in range(5):
+        #     if i+1 in not_available_list:
+        #         continue
+        yield {
+            "youtube_url": item["youtube_url"],
+            "challenge_url": item["challenge_url"],
+            # "transcript": transcript_list[i],
+            "clues": content,
+            # "is_correct": paraphrased_transcript_list[i]["is_correct"],
+            "image_path": images_path,
+            "location": location
+        }
         
 
 if __name__ == "__main__":
     # dump_jsonl(get_data_of_videos(), full_data_path)
-    dump_jsonl(get_processed_data(), processed_data_path)
+    # dump_jsonl(get_processed_data(), processed_data_path)
+    dump_jsonl(get_clues(), processed_data_path)
 
