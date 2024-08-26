@@ -13,7 +13,7 @@ LLM = OpenAI(api_key=Config.MODEL.OPENAI_API_KEY)
 model = "gpt-4-turbo"
 prompt = "Here is a youtube transcript of a player playing geoguessr, in which he is trying to guess the location based on the current views. The youtuber might or might not starts with prologue, play the game, and might or might not end with a epilogue. Please find useful clues he mentioned when he plays, and return me only the clues (it should be some paraphrased clues separated by commas like xxx brands of cars, court style buildings, driving on the right, etc. don't list points and keep clues concise). Instead of using the player's point of view, state the clues in the scene in a neutral tone without mentioning the player) in the transcripts, and exclude the other parts. The clues should not showing the correctness of the final results. The transcript is as follows:\n"
 
-player = "zi8gzag"
+player = "rainbolttwo"
 
 image_path = f"data/images/images_{player}"
 full_data_path = f"data/splited_data/{player}_split.jsonl"
